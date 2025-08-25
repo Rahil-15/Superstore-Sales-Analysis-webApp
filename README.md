@@ -6,7 +6,7 @@ It provides insights into **sales, profit, categories, regions, customer segment
 
 ---
 
-##📁 Project Structure
+## 📁 Project Structure
 
 
 superstore\_sales\_analysis/
@@ -113,8 +113,8 @@ pip install -r requirements.txt
 
 👨‍💻 **Developed by**: Mohammadrahil Nasardi
 
-🌐 **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/your_linkedin)
-📸 **Instagram**: [Your Instagram](https://www.instagram.com/your_instagram)
+🌐 **LinkedIn**: [Let's get Connected](https://www.linkedin.com/in/your_linkedin)
+📸 **Instagram**: [Click to Open](https://www.instagram.com/your_instagram)
 
 ---
 
@@ -127,4 +127,5 @@ pip install -r requirements.txt
 ---
 
 ```
+
 
