@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Superstore Sales Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-light">
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">📊 Superstore Sales Analysis</h1>
+
+    <!-- Summary Cards -->
+    <div class="row text-center mb-4">
+        {% for key, value in summary.items() %}
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5>{{ key }}</h5>
+                    <h3>{{ value }}</h3>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Tables Section (as per requirements) -->
+    <h2 class="mt-4">Tables</h2>
+
+    <div class="card mb-4">
+        <div class="card-header fw-semibold">Summary: Total Sales, Profit, Quantity</div>
+        <div class="card-body table-responsive">
+            {{ summary_table|safe }}
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header fw-semibold">Category vs. Sales/Profit</div>
+        <div class="card-body table-responsive">
+            {{ category_table|safe }}
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header fw-semibold">Region-wise Sales/Profit</div>
+        <div class="card-body table-responsive">
+            {{ region_table|safe }}
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <h2>Charts</h2>
+    <div class="mb-4">{{ category_chart|safe }}</div>
+    <div class="mb-4">{{ subcategory_chart|safe }}</div>
+    <div class="mb-4">{{ region_chart|safe }}</div>
+    <div class="mb-4">{{ monthly_chart|safe }}</div>
+    <div class="mb-4">{{ segment_chart|safe }}</div>
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p class="mb-1">Developed by <strong>Mohammadrahil Nasardi</strong></p>
+        <a href="https://www.instagram.com/_btwitsrahil/" target="_blank" class="text-light me-3">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/rahil-nasardi/" target="_blank" class="text-light">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+</html>
