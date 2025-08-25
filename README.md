@@ -1,4 +1,4 @@
-```markdown
+
 # 📊 Superstore Sales Analysis
 
 A **Flask-based dashboard** that performs **Exploratory Data Analysis (EDA)** on the Superstore dataset.  
@@ -6,8 +6,8 @@ It provides insights into **sales, profit, categories, regions, customer segment
 
 ---
 
-## 📁 Project Structure
-```
+##📁 Project Structure
+
 
 superstore\_sales\_analysis/
 ├── app.py               # Flask app entry
@@ -21,7 +21,7 @@ superstore\_sales\_analysis/
 └── data/
 └── Superstore.csv   # Dataset
 
-````
+
 
 ---
 
@@ -127,4 +127,4 @@ pip install -r requirements.txt
 ---
 
 ```
-```
+
