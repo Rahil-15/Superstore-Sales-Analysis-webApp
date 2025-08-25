@@ -125,7 +125,3 @@ pip install -r requirements.txt
   `Order Date`, `Ship Date`, `Category`, `Sub-Category`, `Sales`, `Profit`, `Quantity`, `Segment`, `Region`, `City`.
 
 ---
-
-```
-
-
